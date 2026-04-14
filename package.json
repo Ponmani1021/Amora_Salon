@@ -2,16 +2,16 @@
   "name": "amora-care",
   "private": true,
   "version": "0.0.0",
-  "homeopage": "https://github.com/Ponmani1021/Amora_Salon.git",
+  "homepage": "https://ponmani1021.github.io/Amora_Salon/",
   "type": "module",
-"scripts": {
-  "dev": "vite",
-  "build": "vite build",
-  "lint": "eslint .",
-  "preview": "vite preview",
-  "predeploy": "npm run build",
-  "deploy": "gh-pages -d dist"
-},
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "eslint .",
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
+  },
   "dependencies": {
     "react": "^19.2.4",
     "react-dom": "^19.2.4",
