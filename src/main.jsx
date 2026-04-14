@@ -6,7 +6,7 @@ import App from './App.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <HashRouter basename="/Amora_Salon">
+    <HashRouter>
       <App />
     </HashRouter>
   </StrictMode>,
