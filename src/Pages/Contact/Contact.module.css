@@ -1,0 +1,133 @@
+:root{
+    --bg-white:#FFFFFF;
+    --primary-color:#364531 ;
+    --text-color:#323232;
+    --input-text-color: #888888;
+    --input-fill-color:#F1F1F1;
+    
+    --text-font: 'Montserrat';
+    --heading-font:'Libre Baskerville', serif;
+}
+
+
+.contactSection{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contactSection>h1{
+    font-size: 3.7em;
+    margin: 3% 0;
+}
+.contactFormSection{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contactForm{
+    width: 50%;
+    text-align: left;
+    padding: 20px;
+    margin-top: 4%;
+}
+
+.contactFormItem>input,textarea{
+    width: 100%;
+    padding: 20px;
+    margin: 20px;
+    outline:none ;
+    border: 1px solid transparent;
+    color: var(--input-text-color);
+    font-size: 1em;
+    background-color: var(--input-fill-color);
+}
+
+.contactFormItem>input::placeholder,textarea::placeholder{
+    color: var(--input-text-color);
+}
+
+
+.contactFormItem>input:hover,textarea:hover{
+    border: 1px solid var(--text-color);
+
+}
+.contactDetailsGrid{
+    width: 90%;
+    margin: 60px 0;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.contactDetail{
+    text-align: center;
+    line-height: 50px;
+    margin-top: 30px;
+}
+
+.contactLocation{
+    width: 90%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+}
+
+.contactLocation>img,iframe{
+    width: 100%;
+}
+
+
+.galleryBooknow{
+    text-align: center;
+    padding: 9% 0;
+    line-height: 80px;
+}
+
+.galleryBooknow>h1{
+    font-size: 3em;
+}
+
+.galleryBooknow>p{
+    font-weight: 500;
+}
+
+.btn{
+    padding: 17px 45px;
+    border-radius: 22px;
+    background-color: var(--primary-color);
+    color: var(--bg-white);
+    border: 1px solid var(--primary-color);
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.btn:hover{
+    background-color: var(--bg-white);
+    color: var(--text-color);
+}
+
+
+@media (max-width:790px) {
+    .contactForm{
+        width: 90%;
+    }
+    .contactLocation{
+        grid-template-columns: 1fr;
+        overflow: hidden;
+    }
+    .contactLocation>img,iframe{
+        margin: 20px;
+    }
+    .contactLocation>iframe{
+        height: 50vh;
+    }
+    .galleryBooknow>h1{
+        font-size: 2.4em;
+    }
+}

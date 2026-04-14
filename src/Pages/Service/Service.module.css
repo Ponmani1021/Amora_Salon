@@ -1,0 +1,136 @@
+
+:root{
+    --bg-white:#FFFFFF;
+    --primary-color:#364531 ;
+    --text-color:#323232;
+    
+    --text-font: 'Montserrat';
+    --heading-font:'Libre Baskerville', serif;
+}
+
+.serviceSection{
+    text-align: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.serviceSection>h1{
+    font-size: 3em;
+}
+
+.serviceContainer{
+    width: 90%;
+    margin: 9% 0;
+    line-height: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.serviceContainer>h1{
+    font-size: 2.5em;
+}
+
+.servicePart{
+    width: 80%;
+    margin: 50px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    row-gap: 60px;
+    column-gap: 40px;
+}
+
+.servicePartItem{
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.servicePartItem>h3,p{
+    font-weight: 500;
+
+}
+
+.servicePartItem>h3{
+    font-size: 1.3em;
+}
+
+.serviceImage{
+    width: 80%;
+    overflow: hidden;
+    border-radius: 10px;
+    height: auto;
+}
+
+.serviceImage img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.serviceDetails{
+    width: 100%;
+    background-color: var(--primary-color);
+    color: var(--bg-white);
+    padding: 66px 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.serviceDetails>h1{
+    color: var(--bg-white);
+    width: 80%;
+    font-weight: 400;
+}
+
+.serviceBooknow{
+    text-align: center;
+    padding: 9% 0;
+    line-height: 80px;
+}
+
+.serviceBooknow>h1{
+    font-size: 3em;
+}
+
+.serviceBooknow>p{
+    font-weight: 500;
+}
+
+.btn{
+    padding: 17px 45px;
+    border-radius: 22px;
+    background-color: var(--primary-color);
+    color: var(--bg-white);
+    border: 1px solid var(--primary-color);
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.btn:hover{
+    background-color: var(--bg-white);
+    color: var(--text-color);
+}
+
+
+@media (max-width:760px) {
+    .servicePart{
+        flex-direction: column;
+    }
+    .servicePartItem{
+        width: 80%;
+        align-items: center;
+    }
+    
+}
+
+@media (max-width:460px) {
+   .serviceBooknow>h1{
+        font-size: 2em;
+    }
+    
+}

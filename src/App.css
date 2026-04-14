@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+:root{
+    --bg-white:#FFFFFF;
+    --primary-color:#364531 ;
+    --text-color:#323232;
+    
+    --text-font: 'Montserrat';
+    --heading-font:'Libre Baskerville', serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--text-font);
+    color: var(--text-color);
+}
+
+h1{
+    font-family: var(--heading-font);
+    color: var(--text-color);
+}
+
+p{
+    color: var(--text-color);
+}
+
+a{
+    text-decoration: none;
+}
+/* Push all page content below the fixed navbar */
+main {
+    padding-top: 12% !important;
+}
+
+@media (max-width:950px) {
+    main {
+        padding-top: 20% !important;
+    }
+}
+@media (max-width:650px) {
+    main {
+        padding-top: 28% !important;
+    }
+}
+
+@media (max-width:450px) {
+    main {
+        padding-top: 35% !important;
+    }
+}

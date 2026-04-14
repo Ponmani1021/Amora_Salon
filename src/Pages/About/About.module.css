@@ -1,0 +1,192 @@
+:root{
+    --bg-white:#FFFFFF;
+    --primary-color:#364531 ;
+    --text-color:#323232;
+    
+    --text-font: 'Montserrat';
+    --heading-font:'Libre Baskerville', serif;
+}
+
+.heading{
+    font-size: 3em;
+    margin-bottom: 25px;
+}
+
+.aboutSection{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.aboutHeroText{
+    width: 60%;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.aboutHeroText>p{
+    line-height: 25px;
+    font-size: 1.1em;
+}
+
+.aboutGridWrapper{
+    width: 80%;
+    margin: 30px 0;
+    display: flex;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    gap: 30px;
+    row-gap: 40px;
+    justify-content: space-evenly;
+}
+
+.aboutGridItems{
+    width: 30%;
+    padding: 20px;
+    text-align: center;
+}
+
+.aboutGridItems>i{
+    font-size: 4.5em;
+    color: var(--primary-color);
+    margin: 15px 5px;
+}
+
+.aboutGridItems>h1{
+    font-size: 1.5em;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+
+.aboutStorySection{
+    width: 90%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.aboutStoryImage{
+    width: 90%;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 10px;
+    margin-bottom: 40px;
+
+}
+
+.aboutStoryImage>img{
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+    object-position: bottom; 
+}
+
+
+.aboutStoryText{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 35px 0;
+}
+
+
+.aboutStoryText>p{
+    width: 60%;
+    margin: 35px 0;
+    line-height: 25px;
+}
+
+
+.aboutTeamImage{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 30px 0;
+}
+
+.teamImage{
+    width: 23%;
+}
+
+.teamImage>img{
+    width: 100%;
+    border-radius: 50%;
+}
+
+.teamImage>h2{
+    font-family: var(--heading-font);
+    margin: 20px;
+}
+
+
+
+@media (max-width:983px){
+    .aboutTeamImage{
+        flex-direction: column;
+        align-items: center;
+    }
+    .teamImage{
+        width: 35%;
+    }
+}
+
+
+
+/* details */
+
+
+.aboutDetails{
+    width: 100%;
+    text-align: center;
+    background-color: var(--primary-color);
+    color: var(--bg-white);
+    margin: 30px 0;
+    padding: 66px 10px;
+}
+
+.aboutDetails>h1{
+    color: var(--bg-white);
+    font-weight: 400;
+}
+
+
+.aboutBooknow{
+    text-align: center;
+    padding: 5% 0;
+    line-height: 60px;
+}
+
+.aboutBooknow>h1{
+    font-size: 3em;
+}
+
+.btn{
+    padding: 17px 45px;
+    border-radius: 22px;
+    background-color: var(--primary-color);
+    color: var(--bg-white);
+    border: 1px solid var(--primary-color);
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.btn:hover{
+    background-color: var(--bg-white);
+    color: var(--text-color);
+}
+
+@media (max-width:672px){
+    .aboutGridItems{
+        width: 100%;
+    }
+    .teamImage{
+        width: 50%;
+    }
+}
+
+
